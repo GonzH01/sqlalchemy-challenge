@@ -1,1 +1,7 @@
 # sqlalchemy-challenge
+The project consists of two main parts: a Jupyter Notebook for data analysis and a Flask web app for sharing data. The Jupyter Notebook is a tool where we analyze weather data from a database called hawaii.sqlite. It uses Python code to examine things like rainfall patterns and temperature data from different weather stations. We use special Python libraries, SQLAlchemy for database work, and Matplotlib for creating charts.
+
+The Flask web app is like a mini-website that lets others access the weather data. It connects to the same database and has different web pages (or routes) for users to get information about rainfall, list of weather stations, and temperature details. This app is handy because it gives data in a format that's easy to use for more analysis or in other applications. So, in short, we have one part for exploring weather data in detail and another part for making this data available to others easily.
+
+Errors encountered:
+While working on my project, I ran into a tricky problem that ended up being a great learning experience. The issue was with handling dates in my Flask web application. I encountered an error saying "time data 'weather_stations: Weather station list' does not match format '%Y-%m-%d'". This error typically happens when the format of the date I expect doesn't line up with what I actually receive, especially when I'm trying to convert date text into date objects in Python.
